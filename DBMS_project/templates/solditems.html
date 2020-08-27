@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Item Id</th>
+        <th>Price</th>
+        <th>Date</th>
+        <th>userdetail</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.item_id }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.date }}</td>
+        <td>{{ item.user_detail }}</td>
+    </tr>
+    {% endfor %}
+</table>

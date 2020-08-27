@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>From User</th>
+        <th>To user</th>
+        <th>Topic</th>
+        <th>Text</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.from_user }}</td>
+        <td>{{ item.to_user }}</td>
+        <td>{{ item.topic }}</td>
+        <td>{{ item.text }}</td>
+    </tr>
+    {% endfor %}
+</table>

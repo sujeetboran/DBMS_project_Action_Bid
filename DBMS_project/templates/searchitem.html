@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>Item Id</th>
+        <th>Initial Price</th>
+        <th>Decription</th>
+        <th>Available</th>
+        <th>Start Interval</th>
+        <th>End Interval</th>
+        <th>Owner</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.item_id }}</td>
+        <td>{{ item.initialprice }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.available }}</td>
+        <td>{{ item.start_interval }}</td>
+        <td>{{ item.end_interval }}</td>
+        <td>{{ item.owner }}</td>
+    </tr>
+    {% endfor %}
+</table>
